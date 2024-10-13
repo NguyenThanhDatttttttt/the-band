@@ -1,0 +1,553 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color:#fff !important;
+}
+
+
+/* PHẦN DÙNG CHUNG */
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col {
+    float:left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width:50%;
+
+}
+
+.col-third {
+    width: 33.33333333%;    
+
+}
+
+.col-full {
+    width:100%;
+
+}
+
+.Right {
+    float:right !important;
+}
+
+.mt-8 {
+    margin-top:8px !important;
+}
+
+.mt-16 {
+    margin-top:16px !important;
+}
+
+.mt-32 {
+    margin-top:32px !important;
+}
+
+
+.button {
+    padding: 11px 13px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    display:inline-block;
+    margin-top:16px;
+    border: none;
+
+    
+}
+
+.button:hover {
+    background-color: #ccc;
+    color:#000;
+}
+
+
+
+
+
+
+
+
+/* END DÙNG CHUNG */
+#header {
+  height: 46px;
+  background-color: black;
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  z-index: 1;
+  overflow:hidden;
+
+}
+#nav {
+   display:inline-block;
+}
+
+#nav > li {
+    display:inline;
+}
+
+#nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 46px;
+    padding: 0 24px;
+   
+}
+
+#nav > li > a {
+    text-transform: uppercase;
+}
+
+#nav li:hover .subnav {
+    display:block;
+
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover
+{
+    color:#000;
+    background-color: #ccc;
+    display:block;
+}
+  
+#nav li {
+    position:relative;
+    display: inline-block;
+}
+
+#nav .subnav {
+    display: none;
+    background-color: #fff;
+    position: absolute;
+    list-style-type: none;
+    box-shadow: 0 0 10px rgba(0 ,0 ,0 ,0.5);
+}
+
+#nav .subnav a {
+    color:#000;
+    line-height: 36px;
+    padding:0 36px 0 12px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 12px;
+}
+
+#header .mobile-menu-button{
+    position:absolute;
+    top:0;
+    right: 0;
+    display:none;
+}
+
+#header .mobile-menu-button,
+#header .search-button {
+    float: right;
+    color: #fff;
+    line-height: 46px;
+    padding: 0 20px;
+}
+
+#header .mobile-menu-button:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-button:hover .menu-icon {
+    color: #000;
+}
+
+#header .search-button:hover {
+    background-color: red;
+    cursor:pointer;
+}
+
+#slider {
+    position: relative;
+}
+
+img.pic-ny {
+    width: 100%;
+    margin-top: 46px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#slider .text-content {
+    position:absolute;
+    color:#fff;
+    width:100%;
+    bottom:32px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    
+}
+
+#slider .text-header {
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+#slider .text-discription {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+}
+
+
+#content {
+   height:500px;
+
+}
+/* THE BAND */
+#content .content-section {
+    width: 800px;
+    padding: 64px 0 112px;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    letter-spacing: 2px ;
+    text-align: center;
+    font-weight: 400;
+}
+
+#content .section-sub-heading {
+    font-size:15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top:25px;
+    text-align: center;
+    opacity: 0.5;
+    font-style: italic;
+    
+}
+
+#content .about-text {
+    margin-top: 30px;
+    text-align: justify;
+    font-weight: 500;
+    font-family: 'Lato' , sans-serif;
+    line-height: 1.4;
+}
+
+#content .member-item {
+    margin-top: 32px;
+    float:left ;
+    width: 33.333333%;
+    text-align: center;
+}
+
+#content .member-Name {
+    font-size: 15px;
+    margin: 15px;
+
+}
+
+#content .member-img {
+    width: 154px;
+    border-radius:4px;
+} 
+
+/* THE TOUR */
+
+.tour-section {
+    background-color: #000;
+  
+}
+
+.ticket-list {
+    background-color: #fff;
+    margin-top:40px;
+    list-style: none;
+}
+
+.ticket-list li {
+    font-size: 14px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+
+.ticket-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.ticket-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+.places-list {
+    margin-top: 16px;
+    display: block;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.places-items {
+    float:left;
+    width: 33.333333%;
+    padding: 8px;
+}
+
+.places-pics {
+    display:block;
+    width:100%;
+}
+
+.places-pic8:hover {
+    opacity:0.6;
+
+}
+
+
+.places-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    
+}
+
+.places-heading {
+    font-size: 15px;
+    margin: 15px 0;
+    font-weight: 600;
+
+}
+
+.places-times {
+    margin: 15px 0;
+    color:#757575;
+}
+
+.places-disc {
+    line-height: 1.4;
+}
+
+
+
+
+
+.modal {
+    position:fixed;
+    right:0;
+    left:0;
+    top:0;
+    bottom:0;
+    background-color: rgba(0 ,0 ,0 ,0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.modal.open{
+    display: flex;
+    
+}
+
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    animation: modalFadein ease 0.5s;
+
+}
+
+header.modal-header {
+    background-color: #009688;
+    height: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+   
+} 
+
+i.ti-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    color: #fff;
+}
+
+i.ti-close:hover {
+    opacity: 0.8;
+
+}
+
+
+.modal-body {
+    padding: 16px;
+}
+
+label.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+input.modal-input {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 25px;
+}
+
+
+button#buy-tickets {
+    width: 100%;
+    padding: 12px;
+    background-color: #009688;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+button#buy-tickets:hover {
+    opacity:0.8;
+     
+}
+
+p.modal-help {
+    padding: 14px;
+    text-align: right;
+}
+
+
+p.modal-help a {
+    color: blue;
+}
+
+
+@keyframes modalFadein {
+    from {
+        transform: translateY(-140px);
+        opacity:0;
+    }
+    to {
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
+
+/* CONTRACT FORM     */
+.contract-content {
+    margin-top:48px;
+    margin-bottom:112px;
+}
+
+.contract-content .col-info {
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+.contract-content i[class*="ti-"]{
+    width: 30px;
+    display:inline-block;
+    line-height: 1.4;
+}
+
+.contract-form {
+    font-size: 15px;
+
+}
+
+.contract-form .form-control {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.map-section img{
+    width:100%;
+}
+
+/* PHẦN CHÂN */
+
+#footer {
+    padding:64px 16px;
+    text-align: center;
+}
+
+#footer .socials-list{
+    font-size: 24px;
+}
+
+#footer .socials-list a{
+    color: rgba(0,0,0,0.6);
+    text-decoration: none;
+}
+
+#footer .socials-list a:hover {
+    color: rgba(0,0,0,0.3);
+}
+
+#footer .copyright {
+    color:rgba(0 ,0 ,0 ,0.6);
+    margin-top:15px;
+}
+
+#footer .copyright a {
+    color:rgba(0 ,0 ,0 ,0.6);
+}
+
+#footer .copyright a:hover {
+    color:rgba(0 ,0 ,0 ,0.4);
+    cursor: pointer;
+}
+
+#footer .note {
+    color:rgba(0 ,0 ,0 ,0.4);
+    margin-top: 96px;
+}
